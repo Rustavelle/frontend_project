@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eaeaea;
+}
+
+.container{
+    background-color: white;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    border-right: 2px solid #dadada;
+    min-height: 100vh;
+}
+
+.button{
+    padding: 25px 0 25px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    position: relative;
+}
+
+.line{
+    width: 10px;
+    height: 10px;
+    background-color: crimson;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition-property: width;
+    transition-duration: 3s;
+}
+
+a:first-letter {
+    color: crimson;
+}
+
+.button:hover .line{
+    width: 100%;
+}
